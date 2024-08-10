@@ -3,7 +3,7 @@ index = 0
 my_list.remove(0)
 while index < len(my_list):
     if my_list[index] < 0:
-        continue
+        break # если оставить continue программа будет продолжаться бесконечно с выводом в консоль и при остановке выдаст ошибку.
     else:
         print(my_list[index])
         index += 1
